@@ -2,8 +2,13 @@
 def prime?(num)
   n = 2
   while n < num
-    return false if num % n == 0
-    n += 1
+    is_divisible = ((num % i) == 0)
+
+    if is_divisible
+      return false
   end
+    i += 1
+  end
+  
   true
 end
